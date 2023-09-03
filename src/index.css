@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+@media screen and (max-width:890px) {
+  .cart{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    
+  }
+  .item{
+    width: 100%;
+  }
+  .item-cart{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+    height: auto;
+   padding-bottom: 1rem;
+
+  }
+  .btn{
+    gap: 0;
+       
+     }
+}
+
+@media screen and (max-width:500px){
+  .cart-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    border: none;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2rem;
+  }
+  .discription{
+    width: 70%;
+    text-align: left;
+  }
+ 
+}
+
